@@ -5,7 +5,7 @@ Replace slow `.download()` with HyperDL and unleash full speed using helper bots
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Blazing fast**: Download files in parallel using multiple helper bots.
 - **Plug-and-play**: Drop into any Pyrogram bot—watermark bots, renamer bots, leech bots, and more.
@@ -15,7 +15,7 @@ Replace slow `.download()` with HyperDL and unleash full speed using helper bots
 
 ---
 
-## 🛠️ Requirements
+## Requirements
 
 - Python 3.8+
 - [pyrogram](https://docs.pyrogram.org/) v2+
@@ -25,7 +25,7 @@ Replace slow `.download()` with HyperDL and unleash full speed using helper bots
 
 ---
 
-## ⚡ Quickstart Example
+## Quickstart Example
 
 1. **Install dependencies:**
     ```sh
@@ -85,9 +85,9 @@ Replace slow `.download()` with HyperDL and unleash full speed using helper bots
     async def download_handler(client, message):
         replied = message.reply_to_message
         if not replied:
-            await message.reply("❌ Reply to a media message with /dl.")
+            await message.reply(" Reply to a media message with /dl.")
             return
-        msg = await message.reply("⏬ Downloading, please wait...")
+        msg = await message.reply(" Downloading, please wait...")
         try:
             file_path = await downloader.download_media(
                 replied,
@@ -97,11 +97,11 @@ Replace slow `.download()` with HyperDL and unleash full speed using helper bots
                 dump_chat=Config.LEECH_DUMP_CHAT
             )
             if file_path:
-                await msg.edit_text(f"✅ Download complete:\n<code>{file_path}</code>")
+                await msg.edit_text(f"Download complete:\n<code>{file_path}</code>")
             else:
-                await msg.edit_text("❌ Download failed or cancelled.")
+                await msg.edit_text("Download failed or cancelled.")
         except Exception as e:
-            await msg.edit_text(f"❌ Error: {e}")
+            await msg.edit_text(f" Error: {e}")
 
     async def main():
         await asyncio.gather(*(bot.start() for bot in helper_bots.values()))
@@ -123,7 +123,7 @@ Replace slow `.download()` with HyperDL and unleash full speed using helper bots
 
 ---
 
-## 💡 Usage in Any Pyrogram Bot
+## Usage in Any Pyrogram Bot
 
 Replace:
 ```python
@@ -137,26 +137,19 @@ await downloader.download_media(message, file_name="downloads/", dump_chat=LEECH
 
 ---
 
-## 🟢 Tips
+## Tips
 
 - **All helper bots AND main bot must be admins in the dump chat!**
 - **Your dump chat can be a private group, channel, or supergroup.**
 - Adjust `HYPER_THREADS` and `CHUNK_SIZE` for maximum speed according to server/network.
 
 ---
-
-## 🧩 FAQ
-- **Q: Is there a size/filetype limit?**  
-  **A:** Only Telegram's own limits (2GB for bots, 4GB for premium). HyperDL maximizes speed for any allowed file.
-
----
-
 ## License
-[MIT License](https://opensource.org/licenses/MIT).
+[MIT](https://opensource.org/licenses/MIT).
 
 ---
 
-## Thanks to
+## Special Thanks ♥️
 
 - [Pyrogram](https://github.com/pyrogram/pyrogram)  
 - [SilentDemonSD](https://github.com/SilentDemonSD)
