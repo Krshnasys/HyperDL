@@ -4,7 +4,7 @@ setup(
     name="hypertgdownloader",
     version="0.1.0",
     description="High-speed Telegram downloader using multiple helper bots (Pyrogram)",
-    author="Your Name",
+    author="NxMirror",
     packages=find_packages(),
     install_requires=[
         "pyrogram>=2.0.0",
