@@ -148,10 +148,6 @@ await downloader.download_media(message, file_name="downloads/", dump_chat=LEECH
 - Adjust `HYPER_THREADS` and `CHUNK_SIZE` for maximum speed according to server/network.
 
 ---
-## License
-[MIT](https://opensource.org/licenses/MIT).
-
----
 
 ## Special Thanks ♥️
 
