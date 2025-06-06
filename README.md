@@ -22,7 +22,7 @@ with:
 ```python
 await downloader.download_media(message, file_name="downloads/", dump_chat=LEECH_DUMP_CHAT)
 ```
-- You can use HyperDL in any Pyrogram-based bots
+- Can be used in any Pyrogram-based bot
 ---
 
 ## Nots 
