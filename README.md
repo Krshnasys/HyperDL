@@ -31,9 +31,9 @@ Replace slow `.download()` with HyperDL and unleash full speed using helper bots
 
 ## Quickstart Example
 
-1. **Install dependencies:**
+1. **Install HyperDL and dependencies:**
     ```sh
-    pip install pyrogram tgcrypto
+    pip install hypertgdownloader pyrogram tgcrypto
     ```
 
 2. **Setup your `config.py`:**
