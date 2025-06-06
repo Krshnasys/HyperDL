@@ -33,8 +33,8 @@ await downloader.download_media(message, file_name="downloads/", dump_chat=LEECH
 
 ---
 
-## Author ♥️
+## Author
 
-- [Pyrogram](https://github.com/pyrogram/pyrogram)  
-- [SilentDemonSD](https://github.com/SilentDemonSD)
+- [Pyrogram] Library (https://github.com/pyrogram/pyrogram)  
+- [SilentDemonSD] Code (https://github.com/SilentDemonSD)
   
