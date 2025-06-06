@@ -1,4 +1,6 @@
-# HyperDL: Superfast Telegram Downloader Library for Pyrogram Bots
+# HyperDL: Superfast Telegram # HyperDL: Superfast Telegram Downloader Library for Pyrogram Bots
+
+[![PyPI version](https://badge.fury.io/py/hypertgdownloader.svg)](https://pypi.org/project/hypertgdownloader/)
 
 **HyperDL** is a parallel, multi-bot download engine for Pyrogram bots, designed for ultra-fast Telegram file downloads.  
 Replace slow `.download()` with HyperDL and unleash full speed using helper bots!
