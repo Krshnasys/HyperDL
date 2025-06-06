@@ -137,7 +137,7 @@ with:
 ```python
 await downloader.download_media(message, file_name="downloads/", dump_chat=LEECH_DUMP_CHAT)
 ```
-- You can use all HyperDL features in watermark bots, video samplers, metadata editors, renamers, and more.
+- You can use HyperDL in any Pyrogram based bots.
 
 ---
 
