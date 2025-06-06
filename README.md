@@ -4,6 +4,10 @@
 
 # HyperDL: Superfast Telegram Downloader Library for Pyrogram Bots
 
+```bash
+pip install hypertgdownloader
+```
+
 **HyperDL** is a parallel, multi-bot download engine for Pyrogram bots, designed for ultra-fast Telegram file downloads.  
 Replace slow `.download()` with HyperDL and unleash full speed using helper bots!
 
@@ -26,6 +30,20 @@ Replace slow `.download()` with HyperDL and unleash full speed using helper bots
 - [tgcrypto](https://github.com/pyrogram/tgcrypto)
 - At least **one main bot** and **one or more helper bots** (@BotFather bots)
 - A **dump chat** (private/group/channel, all your helper bots and main bot must be admins)
+
+---
+
+## Usage in Any Pyrogram Bot
+
+Replace:
+```python
+await message.download()
+```
+with:
+```python
+await downloader.download_media(message, file_name="downloads/", dump_chat=LEECH_DUMP_CHAT)
+```
+- You can use HyperDL in any Pyrogram-based bots like watermarkers, renamers, samplers, and more.
 
 ---
 
@@ -127,20 +145,6 @@ Replace slow `.download()` with HyperDL and unleash full speed using helper bots
 
 ---
 
-## Usage in Any Pyrogram Bot
-
-Replace:
-```python
-await message.download()
-```
-with:
-```python
-await downloader.download_media(message, file_name="downloads/", dump_chat=LEECH_DUMP_CHAT)
-```
-- You can use HyperDL in any Pyrogram based bots.
-
----
-
 ## Tips
 
 - **All helper bots AND main bot must be admins in the dump chat!**
@@ -153,3 +157,4 @@ await downloader.download_media(message, file_name="downloads/", dump_chat=LEECH
 
 - [Pyrogram](https://github.com/pyrogram/pyrogram)  
 - [SilentDemonSD](https://github.com/SilentDemonSD)
+- 
