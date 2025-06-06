@@ -3,8 +3,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 # HyperDL: Superfast Telegram Downloader Library for Pyrogram Bots
-```bash
-pip install hypertgdownloader
 
 **HyperDL** is a parallel, multi-bot download engine for Pyrogram bots, designed for ultra-fast Telegram file downloads.  
 Replace slow `.download()` with HyperDL and unleash full speed using helper bots!
